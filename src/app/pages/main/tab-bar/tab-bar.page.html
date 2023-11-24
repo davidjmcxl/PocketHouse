@@ -1,0 +1,16 @@
+<ion-tabs >
+  <ion-tab-bar slot="bottom" color="primary" class="p-3">
+    <ion-tab-button (click)="activeOption='home'" tab="home" [class]="activeOption==='home'?'bg-[#4A5C43] rounded-[22px] mx-5':'bg-[#D4E0EE] rounded-[22px] mx-5'">
+      <ion-icon name="home-outline" [color]="activeOption==='home'?'light':'dark' " class="text-[30px]" ></ion-icon>
+
+    </ion-tab-button>
+    <ion-tab-button (click)="activeOption='account'" tab="account" [class]="activeOption==='account'?'bg-[#4A5C43] rounded-[22px] mx-5':'bg-[#D4E0EE] rounded-[22px] mx-5'">
+      <ion-icon name="person-outline" [color]="activeOption==='account'?'light':'dark' " class="text-[30px]"></ion-icon>
+
+    </ion-tab-button>
+    <ion-tab-button routerLink="/login"  [class]="activeOption==='logout'?'bg-[#4A5C43] rounded-[22px] mx-5':'bg-[#D4E0EE] rounded-[22px] mx-5'" >
+      <ion-icon name="log-out-outline"  [color]="activeOption==='logout'?'light':'dark' " class="text-[30px]"></ion-icon>
+
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
